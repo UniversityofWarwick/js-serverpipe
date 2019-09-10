@@ -1,6 +1,6 @@
 {
   "name": "@universityofwarwick/serverpipe",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Authenticated fetch wrapper",
   "main": "index.js",
   "devDependencies": {
