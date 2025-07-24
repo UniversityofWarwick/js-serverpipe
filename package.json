@@ -1,20 +1,18 @@
 {
   "name": "@universityofwarwick/serverpipe",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "description": "Authenticated fetch wrapper",
   "main": "index.js",
+  "type": "module",
   "devDependencies": {
-    "@babel/core": "7.2.2",
-    "@babel/preset-env": "7.2.3",
-    "@babel/register": "7.0.0",
-    "chai": "4.2.0",
-    "mocha": "5.2.0"
+    "chai": "^5.2.1",
+    "mocha": "^11.7.1"
   },
   "dependencies": {
     "loglevel": "1.6.1"
   },
   "scripts": {
-    "test": "mocha --require @babel/register test"
+    "test": "mocha test"
   },
   "repository": {
     "type": "git",
@@ -22,5 +20,9 @@
   },
   "author": "University of Warwick",
   "license": "ISC",
-  "homepage": "https://github.com/UniversityOfWarwick/js-serverpipe#readme"
+  "homepage": "https://github.com/UniversityOfWarwick/js-serverpipe#readme",
+  "files": [
+    "/index.js",
+    "/lib"
+  ]
 }
