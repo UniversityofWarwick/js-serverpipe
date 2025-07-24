@@ -21,11 +21,4 @@ jobs:
         run: npm ci
 
       - name: Run tests
-        run: |
-          TEST_OUTPUT=$(npm test --silent)
-          echo "
-          ## Test Output
-          ```
-          $TEST_OUTPUT
-          ```
-          " >> $GITHUB_STEP_SUMMARY
+        run: npm test --silent
