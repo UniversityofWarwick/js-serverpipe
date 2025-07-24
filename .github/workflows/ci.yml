@@ -22,4 +22,10 @@ jobs:
 
       - name: Run tests
         run: |
-          npm test --silent -- --reporter markdown >> $GITHUB_STEP_SUMMARY
+          TEST_OUTPUT=$(npm test --silent)
+          echo "
+          ## Test Output
+          ```
+          $TEST_OUTPUT
+          ```
+          " >> $GITHUB_STEP_SUMMARY
